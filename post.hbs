@@ -6,23 +6,37 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         {{/if}}
     </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+    </div>
 </header>
 
+
 <main class="content" role="main">
+
     <article class="{{post_class}}">
+    <div class="blog-excerpt-author">
+        {{#if author.image}}<img class="author-blog" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
+    </div>
+    <div class="blog-excerpt">
+        <footer class="post-meta">
+	    {{author}}
+	    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+	    <a class="lm10" href="{{url}}#disqus_thread">Comments</a>
+        </footer>
 
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
-            <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
-            </section>
         </header>
 
         <section class="post-content">
@@ -33,12 +47,6 @@
 
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
-
-            {{#if image}}
-            <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-            </figure>
-            {{/if}}
 
             <section class="author">
                 <h4><a href="{{url}}">{{name}}</a></h4>
@@ -91,7 +99,8 @@
 		{{! Disqus comments snippet end here }}
 		</footer>
             </section>
-
+    </div>
+    <div class="cleared"></div>
     </article>
 </main>
 
