@@ -256,6 +256,95 @@ a {
     margin-left: 10px;
 }
 
+.blog-header-sidebar {
+    width: 6% !important;
+    float: right;
+    height: auto;
+}
+
+.blog-header-description {
+    float: right;
+    width: 88% !important;
+    height: auto;
+}
+
+.blog-header-line {
+    background-image: url(/assets/images/header_blue_line.png); 
+    background-position: center;
+    display: inline-block; 
+    height: 1px; 
+    width: 50px;
+}
+
+.footer-sahaj {
+    background-image: url(/assets/images/logo.png); 
+    display: inline-block; 
+    height: 75px; 
+    width: 250px;
+    background-size:   cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.footer-center {
+    float: right;
+    width: 60% !important;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-center p {
+    margin-bottom: 0px;
+    font-size: 0.1em;
+    line-height: 1rem;
+}
+
+.footer-side-line {
+    background-image: url(/assets/images/header_blue_line.png); 
+    background-position: center;
+    display: inline-block; 
+    height: 1px; 
+    width: 100%;
+}
+
+.footer-side {
+    width: 20% !important;
+    float: right;
+    height: auto;
+}
+
+.social-buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 40px;
+    width: 40px;
+    background-size:   cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.fa-twitter {
+    background-image: url(/assets/images/twitter.png); 
+}
+
+.fa-facebook {
+    background-image: url(/assets/images/fb.png); 
+}
+
+.fa-linkedin {
+    background-image: url(/assets/images/linked_in.png); 
+}
+
 a:hover {
     color: #111;
 }
@@ -472,7 +561,7 @@ margin on the iframe, cause it breaks stuff. */
 .inner {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -761,7 +850,6 @@ body.nav-opened .nav {
     bottom: 0;
     left: 50%;
     margin-left: -75px;
-    background: radial-gradient(ellipse at center,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
 }
 
 /* Hide when there's no cover image or on page2+ */
@@ -785,7 +873,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
+    height: 60px;
     padding: 1px 0 5px 0;
     width: auto;
 }
@@ -927,8 +1015,7 @@ body.nav-opened .nav {
     width: 80%;
     max-width: 810px;
     margin: 4rem auto;
-    padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    padding-bottom: 1rem;
     word-wrap: break-word;
 }
 
@@ -937,16 +1024,12 @@ body.nav-opened .nav {
 .post:after {
     display: block;
     content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
+    width: 50px;
+    height: 4px;
     position: absolute;
     bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    margin-left: 100px;
+    background-image: url("/assets/images/blue_thick_line.png");
 }
 
 body:not(.post-template) .post-title {
@@ -956,7 +1039,7 @@ body:not(.post-template) .post-title {
 .post-title a {
     text-decoration: none;
     margin: 0;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 1.5em;
     font-weight: bold;
     font-family: "Arial", serif;
@@ -967,11 +1050,13 @@ body:not(.post-template) .post-title {
 .post-excerpt p {
     margin: 0;
     font-size: 0.8em;
-    line-height: 1.6em;
+    line-height: 1.3em;
 }
 
 .read-more {
     text-decoration: none;
+    font-weight: bold;
+    font-size: smaller;
 }
 
 .post-meta {
@@ -981,12 +1066,12 @@ body:not(.post-template) .post-title {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 2.2rem;
-    color: #363636;
+    color: #53595c;
 }
 
 .author-blog {
-    width: 96px;
-    height: 96px;
+    width: 72px;
+    height: 72px;
     float: left;
     margin-right: 9px;
     border-radius: 100%;
@@ -1002,7 +1087,7 @@ body:not(.post-template) .post-title {
 }
 
 .post-meta a {
-    color: #363636;
+    color: #53595c;
     text-decoration: none;
 }
 
@@ -1064,12 +1149,12 @@ body:not(.post-template) .post-title {
 
 .blog-excerpt {
   float: right;
-  width: 85%;
+  width: 88%;
 }
 
 .blog-excerpt-author {
   float: left;
-  width: 100px;
+  width: 78px;
 }
 
 .cleared {
@@ -1578,21 +1663,10 @@ body:not(.post-template) .post-title {
 
 .extra-pagination {
     display: none;
-    border-bottom: #EBF2F6 1px solid;
 }
+
 .extra-pagination:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    margin-bottom: 20px;
 }
 .extra-pagination .pagination {
     width: auto;
@@ -1615,12 +1689,11 @@ body:not(.post-template) .post-title {
 
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 0;
+    margin: 80px auto 40px auto;
     padding: 1rem 15px;
-    font-family: "Arial", sans-serif;
-    font-size: 1rem;
-    line-height: 1.75em;
-    color: #BBC7CC;
+    width: 80%;
+    max-width: 810px;
+    word-wrap: break-word;
 }
 
 .site-footer a {
