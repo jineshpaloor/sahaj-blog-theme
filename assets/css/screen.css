@@ -779,6 +779,43 @@ body.nav-opened .nav {
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
+    color: #333;
+}
+
+.sahaj-logo {
+    width: 25%;
+    display: inline-block;
+}
+
+.sahaj-menu {
+    width: 60%;
+    display: inline-block;
+}
+
+.sahaj-blog-menu {
+    width: 10%;
+    display: inline-block;
+}
+
+.sahaj-menu ul {
+    list-style: none;
+    counter-reset: item;
+}
+
+.sahaj-menu ul li.nav-current a,
+.sahaj-menu ul a:hover,
+.sahaj-menu ul a:active,
+.sahaj-menu ul a:focus {
+    color: #fff;
+}
+.sahaj-menu ul li {
+    float: left;
+    position: relative;
+    display: block;
+    margin: 5px 10px;
+}
+
+.sahaj-menu ul li a {
     color: #fff;
 }
 
@@ -873,7 +910,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 60px;
+    height: 50px;
     padding: 1px 0 5px 0;
     width: auto;
 }
