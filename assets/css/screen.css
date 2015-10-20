@@ -1197,7 +1197,7 @@ body:not(.post-template) .post-title {
 
 .blog-excerpt-author {
   float: left;
-  width: 78px;
+  width: 12%;
 }
 
 .cleared {
@@ -1902,6 +1902,10 @@ body:not(.post-template) .post-title {
         border-left: none;
     }
 
+    .author-blog{
+        width: 48px;
+        height: 48px;
+    }
 }
 
 
@@ -2163,6 +2167,11 @@ body:not(.post-template) .post-title {
 
     .read-next .post {
         width: 100%;
+    }
+
+    .author-blog{
+        width: 36px;
+        height: 36px;
     }
 
 }
