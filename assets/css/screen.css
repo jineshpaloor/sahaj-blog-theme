@@ -273,7 +273,7 @@ a {
     background-position: center;
     display: inline-block; 
     height: 1px; 
-    width: 50px;
+    width: 100%;
 }
 
 .footer-sahaj {
@@ -785,6 +785,9 @@ body.nav-opened .nav {
 .sahaj-logo {
     width: 25%;
     display: inline-block;
+    position: fixed;
+    left: 20px;
+    top: 15px;
 }
 
 .sahaj-menu {
@@ -795,6 +798,9 @@ body.nav-opened .nav {
 .sahaj-blog-menu {
     width: 10%;
     display: inline-block;
+    position: fixed;
+    right: 20px;
+    top: 15px;
 }
 
 .sahaj-menu ul {
@@ -1511,7 +1517,7 @@ body:not(.post-template) .post-title {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 }
 
 .read-next-story {
@@ -1725,8 +1731,8 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .site-footer {
-    position: relative;
-    margin: 80px auto 40px auto;
+    position: relative !important;
+    margin: 20px auto 40px auto !important;
     padding: 1rem 15px;
     width: 80%;
     max-width: 810px;
@@ -1762,6 +1768,10 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
+
+    .sahaj-menu {
+        display:none;
+    }
 
     blockquote {
         margin-left: 0;
