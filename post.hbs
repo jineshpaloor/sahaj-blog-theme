@@ -40,6 +40,7 @@
 
 <main class="content" role="main">
 
+  <div class="blog-body">
     <article class="{{post_class}}">
     <div class="blog-excerpt-author">
         {{#if author.image}}<img class="author-blog" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
@@ -77,26 +78,25 @@
                     {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
                 </div>
             </section>
-
         {{/author}}
 
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
+        <section class="share">
+            <h4>Share this post</h4>
+            <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="hidden">Twitter</span>
+            </a>
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <span class="hidden">Facebook</span>
+            </a>
+            <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <span class="hidden">Google+</span>
+            </a>
+        </section>
 
-            <section>
+        <section>
 		{{! Disqus comments snippet here }}
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
@@ -113,11 +113,42 @@
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 		{{! Disqus comments snippet end here }}
-		</footer>
-            </section>
+        </section>
+        </footer>
     </div>
-    <div class="cleared"></div>
-    </article>
+  </div>
+  <div class="blog-sidebar">
+      <p class="blog-sidebar-header">Most Read Post</p>
+      <div class="most-read-blog">
+
+        <div class="most-read-header">
+            <div class="most-read-image">
+                {{#if author.image}}<img class="author-blog" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
+            </div>
+            <div class="most-read-author">
+	        <p class="grey-header">Manish Pillewar</p>
+	        <p class="grey-header">3 Comments</p>
+            </div>
+            <div class="most-read-date">
+	        <time class="grey-header" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+            </div>
+        </div>
+
+        <div class="most-read-content">
+           <section class="">
+              <h1 class="post-title"> 4 Critical factors: Experience Design(XD) for businesses success </h1>
+<p>Looking to inject some innovation into your product lifecycle? You’ve developed “awesome” software that nobody uses? Limited by your tech stack? Need to understand your customer’s mind a bit better? Enter Experience Design (XD). No, it isn’t the panacea of all software development ills, but can surely help kickstart the process of customer-spection and disruptive thinking. Here are 4 factors by which ...
+              <br/>
+              <br/>
+ <a href="http://52.10.44.41/2015/10/07/4-critical-factors-experience-design-xd-for-businesses-success/">Continue Reading ...</a>
+              </p>
+            </section>
+        </div>
+      </div>
+  </div>
+
+  <div class="cleared"></div>
+  </article>
 </main>
 
 {{/post}}

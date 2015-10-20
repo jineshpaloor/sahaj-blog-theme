@@ -187,8 +187,8 @@ body {
     max-height: 100%;
     font-family: "Arial", serif;
     letter-spacing: 0.01rem;
-    font-size: 1.5rem;
-    line-height: 1.75em;
+    font-size: 1.4rem;
+    line-height: 1.4em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
@@ -1192,12 +1192,13 @@ body:not(.post-template) .post-title {
 
 .blog-excerpt {
   float: right;
-  width: 88%;
+  width: 84%;
 }
 
 .blog-excerpt-author {
   float: left;
   width: 12%;
+  margin: 0px 10px;
 }
 
 .cleared {
@@ -1762,6 +1763,86 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
+.blog-body {
+    width: 66%;
+    display: inline-block;
+    float: left;
+}
+
+.blog-sidebar {
+    width: 30%;
+    display: inline-block;
+}
+
+.blog-sidebar-header {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 4rem;
+}
+
+.most-read-header {
+    height: 80px;
+}
+
+.sidebar-box {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    border: 1px solid #a7d3fa;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.most-read-image {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.most-read-author {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+}
+
+.grey-header {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+.most-read-author p{
+    margin-bottom: 0px; 
+}
+
+.most-read-date {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+}
+
+.most-read-content .post-title{
+    font-size: 1em !important; 
+    margin: 20px auto;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-family: "Arial", serif;
+    letter-spacing: 0.01rem;
+    color: #3C82A8;
+}
+
+.most-read-content p {
+   font-size: 0.9em !important; 
+   line-height: 1.5em;
+   margin: 10px auto;
+}
 
 /* ==========================================================================
    11. Media Queries - Smaller than 900px
