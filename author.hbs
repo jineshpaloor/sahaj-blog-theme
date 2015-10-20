@@ -5,14 +5,30 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header class="main-header author-head {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
         <nav class="main-nav overlay clearfix">
+            <div class="sahaj-logo">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+            </div>
+            <div class="sahaj-menu">
+              <ul>
+                <li> <a href="http://sahajsoft.com#team">TEAM</a> </li>
+                <li> <a href="http://sahajsoft.com#services">SERVICES</a> </li>
+                <li> <a href="http://sahajsoft.com#product">PRODUCTS</a> </li>
+                <li> <a href="http://sahajsoft.com#about">ABOUT US</a> </li>
+                <li> <a href="http://sahajsoft.com#blog">BLOGS</a> </li>
+                <li> <a href="http://sahajsoft.com#career">CAREERS</a> </li>
+                <li> <a href="http://sahajsoft.com#contact">CONTACT US</a> </li>
+              </ul>
+            </div>
+            <div class="sahaj-blog-menu">
             {{#if @blog.navigation}}
                 <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
             {{/if}}
+            </div>
         </nav>
     </header>
+    
 
     <section class="author-profile inner">
         {{#if image}}
