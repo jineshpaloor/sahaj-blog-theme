@@ -1850,7 +1850,7 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 900px) {
 
-    .sahaj-menu {
+    .sahaj-menu, .most-read-header {
         display:none;
     }
 
