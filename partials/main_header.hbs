@@ -1,0 +1,33 @@
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        <div class="sahaj-logo">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        </div>
+        <div class="sahaj-menu">
+          <ul>
+            <li> <a href="http://sahajsoft.com#team">TEAM</a> </li>
+            <li> <a href="http://sahajsoft.com#services">SERVICES</a> </li>
+            <li> <a href="http://sahajsoft.com#product">PRODUCTS</a> </li>
+            <li> <a href="http://sahajsoft.com#about">ABOUT US</a> </li>
+            <li> <a href="http://sahajsoft.com#blog">BLOGS</a> </li>
+            <li> <a href="http://sahajsoft.com#career">CAREERS</a> </li>
+            <li> <a href="http://sahajsoft.com#contact">CONTACT US</a> </li>
+          </ul>
+        </div>
+        <div class="sahaj-blog-menu">
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+        </div>
+    </nav>
+    <div class="vertical">
+      <div class="main-header-content inner">
+        <div class="blog-header-sidebar"><span class="blog-header-line"></span></div>
+        <div class="blog-header-description"><h2 class="page-description">{{@blog.description}}</h2></div>
+        <div class="blog-header-sidebar"><span class="blog-header-line"></span></div>
+        <div class="cleared"></div>
+        </div>
+    </div>
+</header>
+
+
