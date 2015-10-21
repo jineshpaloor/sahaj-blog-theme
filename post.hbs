@@ -117,34 +117,9 @@
         </footer>
     </div>
   </div>
+
   <div class="blog-sidebar">
-      <p class="blog-sidebar-header">Most Read Post</p>
-      <div class="most-read-blog">
-
-        <div class="most-read-header">
-            <div class="most-read-image">
-                {{#if author.image}}<img class="author-blog" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-            </div>
-            <div class="most-read-author">
-	        <p class="grey-header">Manish Pillewar</p>
-	        <p class="grey-header">3 Comments</p>
-            </div>
-            <div class="most-read-date">
-	        <time class="grey-header" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
-            </div>
-        </div>
-
-        <div class="most-read-content">
-           <section class="">
-              <h1 class="post-title"> 4 Critical factors: Experience Design(XD) for businesses success </h1>
-<p>Looking to inject some innovation into your product lifecycle? You’ve developed “awesome” software that nobody uses? Limited by your tech stack? Need to understand your customer’s mind a bit better? Enter Experience Design (XD). No, it isn’t the panacea of all software development ills, but can surely help kickstart the process of customer-spection and disruptive thinking. Here are 4 factors by which ...
-              <br/>
-              <br/>
- <a href="http://52.10.44.41/2015/10/07/4-critical-factors-experience-design-xd-for-businesses-success/">Continue Reading ...</a>
-              </p>
-            </section>
-        </div>
-      </div>
+    {{> "sidebar"}}
   </div>
 
   <div class="cleared"></div>
