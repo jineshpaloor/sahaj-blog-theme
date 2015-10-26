@@ -784,7 +784,7 @@ body.nav-opened .nav {
 }
 
 .sahaj-logo {
-    width: 25%;
+    width: 10%;
     display: inline-block;
     position: fixed;
     left: 20px;
@@ -792,7 +792,7 @@ body.nav-opened .nav {
 }
 
 .sahaj-menu {
-    width: 60%;
+    width: 80%;
     display: inline-block;
 }
 
@@ -807,6 +807,7 @@ body.nav-opened .nav {
 .sahaj-menu ul {
     list-style: none;
     counter-reset: item;
+    float: right;
 }
 
 .sahaj-menu ul li.nav-current a,
