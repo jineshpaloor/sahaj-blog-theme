@@ -288,7 +288,7 @@ a {
 
 .footer-center {
     float: right;
-    width: 60% !important;
+    width: 50% !important;
     height: auto;
     margin: auto;
     text-align: center;
@@ -309,9 +309,10 @@ a {
 }
 
 .footer-side {
-    width: 20% !important;
+    width: 25% !important;
     float: right;
     height: auto;
+    margin-top: 25px;
 }
 
 .social-buttons {
@@ -1787,7 +1788,7 @@ body:not(.post-template) .post-title {
 }
 
 .most-read-header {
-    height: 80px;
+    height: 60px;
 }
 
 .sidebar-box {
@@ -1800,17 +1801,25 @@ body:not(.post-template) .post-title {
 }
 
 .most-read-image {
-    width: 25%;
+    width: 20%;
     display: inline-block;
     float: left;
-    margin-right: 10px;
+    padding: 0 10px;
 }
 
+.most-read-image .author-blog {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 9px;
+    border-radius: 100%;
+    border: 3px solid rgb(229, 229, 229);
+}
 .most-read-author {
-    width: 38%;
+    width: 69%;
     display: inline-block;
     float: left;
-    margin-top: 20px;
+    padding: 5px;
 }
 
 .grey-header {
@@ -1825,15 +1834,14 @@ body:not(.post-template) .post-title {
 }
 
 .most-read-date {
-    width: 32%;
     display: inline-block;
-    float: left;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 0.9em;
 }
 
 .most-read-content .post-title{
     font-size: 1em !important; 
-    margin: 20px auto;
+    margin: 10px auto;
     text-decoration: none;
     line-height: 1.5em;
     font-weight: bold;
