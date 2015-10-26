@@ -1737,7 +1737,7 @@ body:not(.post-template) .post-title {
 
 .site-footer {
     position: relative !important;
-    margin: 20px auto 40px auto !important;
+    margin: 60px auto 40px auto !important;
     padding: 1rem 15px;
     width: 80%;
     max-width: 810px;
@@ -1768,13 +1768,13 @@ body:not(.post-template) .post-title {
 }
 
 .blog-body {
-    width: 66%;
+    width: 70%;
     display: inline-block;
     float: left;
 }
 
 .blog-sidebar {
-    width: 34%;
+    width: 30%;
     display: inline-block;
 }
 
@@ -1807,7 +1807,7 @@ body:not(.post-template) .post-title {
 }
 
 .most-read-author {
-    width: 40%;
+    width: 38%;
     display: inline-block;
     float: left;
     margin-top: 20px;
@@ -1816,7 +1816,7 @@ body:not(.post-template) .post-title {
 .grey-header {
     color: #333;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.3em;
 }
 
