@@ -1079,7 +1079,7 @@ body.nav-opened .nav {
     height: 4px;
     position: absolute;
     bottom: -5px;
-    margin-left: 100px;
+    margin-left: 16%;
     background-image: url("/assets/images/blue_thick_line.png");
 }
 
